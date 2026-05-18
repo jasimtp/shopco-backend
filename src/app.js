@@ -17,6 +17,9 @@ app.get("/", (req, res) => {
 app.get("/test", (req, res) => {
   res.send("Test route working");
 });
+app.get("/api/products-test", (req, res) => {
+  res.json({ message: "products route test working" });
+});
 
 
 const productRoutes = require("./routes/product.routes");
