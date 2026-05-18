@@ -8,8 +8,7 @@ app.use(cors());
 app.use(express.json());
 
 
-app.use(cors());
-app.use(express.json());
+
 
 app.get("/", (req, res) => {
   res.send("SHOP.CO Backend is running");
@@ -19,7 +18,6 @@ app.get("/test", (req, res) => {
   res.send("Test route working");
 });
 
-const productRoutes = require("./routes/product.routes");
 
 const productRoutes = require("./routes/product.routes");
 const cartRoutes = require("./routes/cart.routes");
