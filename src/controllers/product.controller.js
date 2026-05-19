@@ -14,7 +14,7 @@ const buildVariantsWithImages = (variants, files) => {
   return variants.map((variant, index) => {
     const newImages = files
       .filter((file) => file.fieldname === `variantImages_${index}`)
-      .map((file) => `/uploads/${file.filename}`);
+      .map((file) => file.path);
 
     return {
       color: variant.color,
